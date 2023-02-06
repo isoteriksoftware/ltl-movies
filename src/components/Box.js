@@ -7,6 +7,14 @@ export default class Box extends Lightning.Component {
       w: 80,
       h: 80,
       color: 0xffff0000,
+
+      Label: {
+        text: {
+          text: this.bindProp("label"),
+          textAlign: "center",
+          wordWrap: true,
+        },
+      },
     };
   }
 }
