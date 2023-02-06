@@ -1,0 +1,6 @@
+{
+  "name": "LTL Movies",
+  "identifier": "com.domain.app.LTLMovies",
+  "version": "1.0.0",
+  "icon": "./static/icon.png"
+}
