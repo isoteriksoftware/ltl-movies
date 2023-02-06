@@ -5,33 +5,32 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  plugins: ['prettier'],
-  extends: ['eslint:recommended', 'plugin:prettier/recommended', 'prettier'],
+  plugins: ["prettier"],
+  extends: ["eslint:recommended", "plugin:prettier/recommended", "prettier"],
   rules: {
-    quotes: [2, 'single', 'avoid-escape'],
-    semi: [2, 'never'],
-    'no-extra-boolean-cast': 'off',
-    'no-unused-vars': [
+    quotes: [2, "double", "avoid-escape"],
+    semi: [2, "always"],
+    "no-extra-boolean-cast": "off",
+    "no-unused-vars": [
       1,
       {
         ignoreRestSiblings: true,
-        argsIgnorePattern: 'res|next|^err',
+        argsIgnorePattern: "res|next|^err",
       },
     ],
-    'prettier/prettier': [
-      'error',
+    "prettier/prettier": [
+      "error",
       {
-        trailingComma: 'all',
-        singleQuote: true,
+        trailingComma: "all",
+        singleQuote: false,
         tabWidth: 2,
-        semi: false,
-        printWidth: 100,
+        semi: true,
       },
     ],
   },
   parserOptions: {
-    parser: 'babel-eslint',
+    parser: "babel-eslint",
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module",
   },
-}
+};
